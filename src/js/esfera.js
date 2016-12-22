@@ -1,4 +1,4 @@
-var Cubo = function(radio) {
+var Esfera = function(radio) {
 	this.radio = radio;
 
 	// funcion que calcula el volumen
