@@ -5,6 +5,6 @@ var Cubo = function(ancho, largo, altura) {
 
 	// funcion que calcula el volumen
 	this.calcVolumen = function() {
-		return 0;
-	}
-}
+		return this.ancho * this.altura * this.largo;
+	};
+};

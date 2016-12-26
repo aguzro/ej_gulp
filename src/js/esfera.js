@@ -3,6 +3,6 @@ var Esfera = function(radio) {
 
 	// funcion que calcula el volumen
 	this.calcVolumen = function() {
-		return 0;
-	}
-}
+		return Math.PI * this.radio * this.radio;
+	};
+};
