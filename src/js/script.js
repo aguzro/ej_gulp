@@ -1,9 +1,4 @@
 $(document).ready(function () {
-  /*CUSTOM LINKS SCROLLING FUNCTION */
-  // CAROUSEL FUNCTION 
-  $('.carousel').carousel({
-    interval: 2000 //TIME IN MILLI SECONDS
-  });
 
   /* esconde los campos */
   $('#figura').on('change', function(ef) {
