@@ -31,6 +31,31 @@ $(document).ready(function () {
   /* formulario que calcula volumen de la figura */
   $('#form-figura').on('submit', function(e) {
     e.preventDefault();
+
+    var figura = $('#figura').val();
+
+    if (figura == "esfera") {
+
+      var radio = parseInt($('#radio input').val() || 0);
+      var volumen = Math.PI * radio * radio;
+      $('#datos-figura').html(volumen);
+
+    } else if (figura == "cubo") {
+
+      var ancho = parseInt($('#ancho input').val() || 0);
+      var largo = parseInt($('#largo input').val() || 0);
+      var altura = parseInt($('#altura input').val() || 0);
+
+      $('#datos-figura').html(ancho*largo*altura);
+    } else if (figura == "piramide") {
+
+      var ancho = parseInt($('#ancho input').val() || 0);
+      var largo = parseInt($('#largo input').val() || 0);
+      var altura = parseInt($('#altura input').val() || 0);
+
+      $('#datos-figura').html(ancho*largo*altura/3);
+
+    }
     console.log('calculado');
   });
 });
