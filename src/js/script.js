@@ -32,7 +32,7 @@ $(document).ready(function () {
     if (figura == "esfera") {
 
       var radio = parseInt($('#radio input').val() || 0);
-      var esfera = new Esfera(radio)
+      var esfera = new Esfera(radio);
       $('#datos-figura').html(esfera.calcVolumen());
 
     } else if (figura == "cubo") {
@@ -46,11 +46,11 @@ $(document).ready(function () {
 
     } else if (figura == "piramide") {
 
-      var ancho = parseInt($('#ancho input').val() || 0);
-      var largo = parseInt($('#largo input').val() || 0);
-      var altura = parseInt($('#altura input').val() || 0);
+      var a = parseInt($('#ancho input').val() || 0);
+      var l = parseInt($('#largo input').val() || 0);
+      var alt = parseInt($('#altura input').val() || 0);
 
-      var piramide = new Piramide(ancho, largo, altura)
+      var piramide = new Piramide(a, l, alt);
       $('#datos-figura').html(piramide.calcVolumen());
 
     }
